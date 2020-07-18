@@ -36,6 +36,9 @@ export default class Welcome extends React.Component {
             width: "100%",
             // backgroundColor: '#378a20',
             height: "20%"
+        },
+        continueBtn: {
+
         }
     });
     return (
@@ -50,7 +53,7 @@ export default class Welcome extends React.Component {
             <Text>I agree to get notification for Rakuten Health promotion and marketing information
                   (optional) </Text>
           </View>
-            <Button
+            <Button style={styles.continueBtn}
                 onPress={() => {this.props.navigation.navigate('Home')}}
                 title="Continue"
                 color="#841584"
