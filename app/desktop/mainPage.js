@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View, Button, StyleSheet, ScrollView} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Ionicons } from 'react-native-vector-icons/Ionicons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Profile from './profile';
 
 const Tab = createBottomTabNavigator();
@@ -32,13 +32,15 @@ export default class MainPage extends React.Component {
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
               if (route.name === 'Home') {
-                iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
+                iconName = focused ? 'home' : 'gratipay';
               } else if (route.name === 'Together') {
-                iconName = focused ? 'ios-list-box' : 'ios-list';
+                iconName = focused ? 'users' : 'user';
+              } else if (route.name === 'Discover') {
+                iconName = focused ? 'globe' : 'globe';
               }
 
               // You can return any component that you like here!
-              return <Text>Me</Text>;
+              return  <FontAwesome name={iconName} />;
             },
           })}
           tabBarOptions={{
@@ -48,7 +50,7 @@ export default class MainPage extends React.Component {
         >
           <Tab.Screen name="Home" component={Profile} />
           <Tab.Screen name="Together" component={Profile} />
-          {/* <Tab.Screen name="Discover" component={Profile} /> */}
+          <Tab.Screen name="Discover" component={Profile} />
         </Tab.Navigator>
 
       // <ScrollView showsVerticalScrollIndicator={false}      >
