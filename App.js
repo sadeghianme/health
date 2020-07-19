@@ -13,14 +13,16 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import MainPage from './app/desktop/mainPage';
 import Welcome from './app/desktop/welcome';
+import Privacy from './app/desktop/Privacy';
 const Stack = createStackNavigator();
 
 const App: () => React$Node = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Rakuten Health" component={Welcome} />
+        <Stack.Screen name="Welcome" options={{headerShown: false}} component={Welcome} />
         <Stack.Screen name="Home" component={MainPage} />
+        <Stack.Screen name="Privacy" component={Privacy} />
       </Stack.Navigator>
     </NavigationContainer>
   );
