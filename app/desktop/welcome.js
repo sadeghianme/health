@@ -73,7 +73,7 @@ export default class Welcome extends React.Component {
             fontWeight: "500"
         },
         button: {
-            marginTop: 10,
+            marginTop: 16,
             alignItems: "center",
             justifyContent: "center"
         },
@@ -85,7 +85,7 @@ export default class Welcome extends React.Component {
             justifyContent: "center"
         },
         checkbox: {
-            marginTop: 3,
+            marginTop: 2,
             width: 15,
             height: 15,
             borderColor: "#030503",
@@ -98,7 +98,7 @@ export default class Welcome extends React.Component {
             height: "100%",
             position: "absolute",
             top: 0,
-            margin: -16
+            // margin: -16
         }
     });
     return (

@@ -13,7 +13,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import MainPage from './app/desktop/mainPage';
 import Welcome from './app/desktop/welcome';
-import Privacy from './app/desktop/Privacy';
+import Privacy from './app/desktop/privacy';
+import Profile from './app/desktop/profile';
 const Stack = createStackNavigator();
 
 const App: () => React$Node = () => {
@@ -23,6 +24,7 @@ const App: () => React$Node = () => {
         <Stack.Screen name="Welcome" options={{headerShown: false}} component={Welcome} />
         <Stack.Screen name="Home" options={{headerShown: false}} component={MainPage} />
         <Stack.Screen name="Privacy" options={{headerShown: false}} component={Privacy} />
+        <Stack.Screen name="Profile" options={{headerShown: false}} component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );
