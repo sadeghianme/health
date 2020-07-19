@@ -57,7 +57,7 @@ export default class Privacy extends React.Component {
             },
         })
         return (
-            <ScrollView contentContainerStyle={styles.container}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.container}>
                 <View>
                     <Text style={styles.title}>FitMate Privacy</Text>
                     <Text style={styles.title}>Realesed: 2020-08-14</Text>

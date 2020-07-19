@@ -15,6 +15,7 @@ import MainPage from './app/desktop/mainPage';
 import Welcome from './app/desktop/welcome';
 import Privacy from './app/desktop/privacy';
 import Profile from './app/desktop/profile';
+import WalkPage from './app/desktop/walkPage';
 const Stack = createStackNavigator();
 
 const App: () => React$Node = () => {
@@ -25,6 +26,7 @@ const App: () => React$Node = () => {
         <Stack.Screen name="Home" options={{headerShown: false}} component={MainPage} />
         <Stack.Screen name="Privacy" options={{headerShown: false}} component={Privacy} />
         <Stack.Screen name="Profile" options={{headerShown: false}} component={Profile} />
+        <Stack.Screen name="walk" options={{headerShown: false}} component={WalkPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -30,12 +30,15 @@ export default class MainPage extends React.Component {
               }
 
               // You can return any component that you like here!
-              return  <FontAwesome name={iconName} />;
+              return  <FontAwesome name={iconName} size={size} color={color} />;
             },
           })}
           tabBarOptions={{
-            activeTintColor: 'tomato',
+            activeTintColor: '#ff00bf',
             inactiveTintColor: 'gray',
+            style: {
+              backgroundColor: '#eee',
+            },
           }}
         >
           <Tab.Screen name="Home" component={Dashboard} />
