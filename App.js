@@ -21,8 +21,8 @@ const App: () => React$Node = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Welcome" options={{headerShown: false}} component={Welcome} />
-        <Stack.Screen name="Home" component={MainPage} />
-        <Stack.Screen name="Privacy" component={Privacy} />
+        <Stack.Screen name="Home" options={{headerShown: false}} component={MainPage} />
+        <Stack.Screen name="Privacy" options={{headerShown: false}} component={Privacy} />
       </Stack.Navigator>
     </NavigationContainer>
   );
