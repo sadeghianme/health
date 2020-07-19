@@ -38,7 +38,7 @@ export default class MainPage extends React.Component {
               }
 
               // You can return any component that you like here!
-              return <Text>M</Text>;
+              return <Text>Me</Text>;
             },
           })}
           tabBarOptions={{
