@@ -1,20 +1,18 @@
 import React from 'react';
-import {Text, View, Button, StyleSheet} from 'react-native';
-import { Ionicons } from 'react-native-vector-icons/Ionicons';
-
+import {StyleSheet, Text, TouchableOpacity, View, ScrollView} from 'react-native';
 export default class Profile extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    const styles = StyleSheet.create({
-        
-    });
-    return (
-      <View>
-        <Text>Profile</Text>
-        {/* <Ionicons name="ios-list-box" />; */}
-      </View>
-    );
-  }
+    constructor() {
+        super();
+    }
+    render() {
+        // variable
+        const styles = StyleSheet.create({
+
+        })
+        return (
+            <ScrollView contentContainerStyle={styles.container}>
+
+            </ScrollView>
+        );
+    }
 }

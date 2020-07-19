@@ -73,7 +73,7 @@ export default class Welcome extends React.Component {
             fontWeight: "500"
         },
         button: {
-            marginTop: 10,
+            marginTop: 16,
             alignItems: "center",
             justifyContent: "center"
         },
@@ -85,7 +85,7 @@ export default class Welcome extends React.Component {
             justifyContent: "center"
         },
         checkbox: {
-            marginTop: 3,
+            marginTop: 2,
             width: 15,
             height: 15,
             borderColor: "#030503",
@@ -98,7 +98,7 @@ export default class Welcome extends React.Component {
             height: "100%",
             position: "absolute",
             top: 0,
-            margin: -16
+            // margin: -16
         }
     });
     return (
@@ -111,7 +111,7 @@ export default class Welcome extends React.Component {
               <Text style={styles.welcomeText}>FitMate</Text>
           </View>
         <View style={styles.continue}>
-            <Text style={styles.termsText}>By Continuing, you agree to the <Text style={styles.privacyText} onPress={() => {this.props.navigation.navigate('Privacy')}}>Privacy Notice.</Text>
+            <Text style={styles.termsText}>By Continuing, you agree to the <Text style={styles.privacyText} onPress={() => {this.props.navigation.navigate('Profile')}}>Privacy Notice.</Text>
             </Text>
           <View style={styles.agree}>
               <CheckBox
